@@ -114,10 +114,28 @@
             </td>
         </tr>
     </table>
+    
+    <h2>Terminal Helpers</h2>
+    <table class="table table-dark table-striped">
+        <tr>
+            <td>Remove all containers</td>
+            <td>
+                <p>docker rm -f $(docker ps -a -q)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Remove all images</td>
+            <td>
+                <p>docker rmi --force $(docker images -a -q)</p>
+            </td>
+        </tr>
+        
+    </table>
   </main>
 
   <footer class="mt-auto text-white-50">
     <p>Made with interest by Andrii Pereverziev (webuxmotion)</p>
+    <a href="https://github.com/tonephp/tonephp-website">https://github.com/tonephp/tonephp-website</a>
   </footer>
 </div>
 
