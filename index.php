@@ -129,6 +129,12 @@
                 <p>docker rmi --force $(docker images -a -q)</p>
             </td>
         </tr>
+        <tr>
+            <td>Remove all volumes</td>
+            <td>
+                <p>docker volume rm $(docker volume ls -q)</p>
+            </td>
+        </tr>
         
     </table>
   </main>
